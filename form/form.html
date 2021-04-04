@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="main.js"></script>
+    <style>
+        .box{
+            width: 200px;
+            height: 250px;
+            float: left;
+            margin: 20px;
+        }
+        .right{
+            border: 3px dashed black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercise using the DOM, Events and Functions</h1>
+
+    <form action="#" method="POST" id="form" onsubmit="return false;">
+        <div class="box">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name"><br>
+            <span id="error_name"></span>
+            <br><br>
+            <label for="last_name">Last name:</label>
+            <input type="text" name="last_name" id="last_name"><br>
+            <span id="error_lastName"></span>
+            <br><br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age">
+            <span id="error_age"></span>
+            <br><br><br>
+            <input type="submit" value="Submit" id="Submit">
+        </div>
+        <div class="box right">
+            <h3>User information</h3>
+            <hr>
+            <p id="p_name">
+                Nombre: <span></span>
+            </p>
+            <p id="p_lastName">
+                Nombre: <span></span>
+            </p>
+            <p id="p_age">
+                Nombre: <span></span>
+            </p>
+        </div>
+    </form>
+</body>
+</html>
